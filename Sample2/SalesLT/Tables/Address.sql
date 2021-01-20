@@ -8,8 +8,8 @@
     [PostalCode]    NVARCHAR (15)    NOT NULL,
     [rowguid]       UNIQUEIDENTIFIER CONSTRAINT [DF_Address_rowguid] DEFAULT (newid()) NOT NULL,
     [ModifiedDate]  DATETIME         CONSTRAINT [DF_Address_ModifiedDate] DEFAULT (getdate()) NOT NULL,
-    [NewColumn1] NCHAR(10) NOT NULL, 
-    [Newcolumn2] NCHAR(10) NOT NULL, 
+    [NewColumn1] NCHAR(10) NULL, 
+    [Newcolumn2] NCHAR(10) NULL, 
     CONSTRAINT [PK_Address_AddressID] PRIMARY KEY CLUSTERED ([AddressID] ASC),
     CONSTRAINT [AK_Address_rowguid] UNIQUE NONCLUSTERED ([rowguid] ASC)
 );
