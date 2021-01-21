@@ -3,7 +3,7 @@
   <Version>10</Version>
   <SourceModelProvider>
     <ConnectionBasedModelProvider>
-      <ConnectionString>Data Source=sql-ry-prod.database.windows.net;Initial Catalog=sample_Copy;User ID=sql-ry-prod;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False</ConnectionString>
+      <ConnectionString>Data Source=sql-ry-prod.database.windows.net;Initial Catalog=sample_Copy;User ID=sql-ry-prod;Pooling=False;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False</ConnectionString>
     </ConnectionBasedModelProvider>
   </SourceModelProvider>
   <TargetModelProvider>
