@@ -13,6 +13,7 @@
     [SourceCol1]    NCHAR (10)       NULL,
     [SourceCol2]    NCHAR (10)       NULL,
     [finalcol] NCHAR(10) NULL, 
+    [lastcheck] NCHAR(10) NULL, 
     CONSTRAINT [PK_Address_AddressID] PRIMARY KEY CLUSTERED ([AddressID] ASC),
     CONSTRAINT [AK_Address_rowguid] UNIQUE NONCLUSTERED ([rowguid] ASC)
 );
