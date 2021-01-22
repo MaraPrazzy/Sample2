@@ -16,6 +16,7 @@
     [ThumbnailPhotoFileName] NVARCHAR (50)    NULL,
     [rowguid]                UNIQUEIDENTIFIER CONSTRAINT [DF_Product_rowguid] DEFAULT (newid()) NOT NULL,
     [ModifiedDate]           DATETIME         CONSTRAINT [DF_Product_ModifiedDate] DEFAULT (getdate()) NOT NULL,
+    [tablecheck2] NCHAR(10) NULL, 
     CONSTRAINT [PK_Product_ProductID] PRIMARY KEY CLUSTERED ([ProductID] ASC),
     CONSTRAINT [CK_Product_ListPrice] CHECK ([ListPrice]>=(0.00)),
     CONSTRAINT [CK_Product_SellEndDate] CHECK ([SellEndDate]>=[SellStartDate] OR [SellEndDate] IS NULL),
