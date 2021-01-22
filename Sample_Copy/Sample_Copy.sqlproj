@@ -104,4 +104,7 @@
   <ItemGroup>
     <None Include="Compare\SqlSchemaCompare2.scmp" />
   </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Sample_Copy.refactorlog" />
+  </ItemGroup>
 </Project>
